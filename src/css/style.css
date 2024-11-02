@@ -1,0 +1,296 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: grey;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+#root{
+    width: 100%;
+}
+
+
+/* navigation */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    background-color: black;
+}
+.sousNave{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+    width: 90%;
+    background-color: rgba(0, 128, 0, 0);
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50%;
+    width: 80%;
+}
+.logo{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgLogo{
+    width: 50px;
+}
+.icon{
+  width: 30px;
+}
+.globe{
+    width: 20px;
+}
+
+.titre{
+    color: #71db62;
+}
+.blokBtn{
+    text-decoration: none;
+    background-color: #70db6200;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn{
+    margin: 10px;
+    text-decoration: none;
+}
+.blok1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 80%;
+    margin-top: 10px;
+}
+.fa-solid{
+    color: white;
+}
+
+.fonction{
+    font-size: 14px;
+    color: white;
+}
+.separe{
+    margin-top: 40px;
+}
+
+
+.mention{
+    color: #c7c7c7;
+    font-size: 11px;
+}
+
+.langue{
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.langue:hover{
+    background-color: #71db62;
+}
+
+
+
+
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 9%;
+    background-color: rgb(18, 18, 18);
+}
+.blokBouton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    height: 90%;
+    width: 30%;
+    margin-right: 10px;
+}
+.bouton1{
+    text-decoration: none;
+    color: #d7d7d7;
+    transition: 0.2s;
+}
+.bouton1:hover{
+    color: #fff;
+    font-size: 17px;
+    transition: 0.1s;
+}
+.bouton2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    border-radius: 30px;
+    height: 70%;
+    width: 60%;
+    transition: 0.2s;
+    margin-right: 10px;
+}
+.bouton2:hover{
+    background-color: #71db62;
+    height: 75%;
+    width: 65%;
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+main{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+.contenue{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    overflow-y: scroll; /* Ajoute barre de defilement */
+}
+.blok{
+    color: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(24, 24, 24);
+}
+.blokMusic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.blokMusic:hover{
+    box-shadow: 1px 1px 15px black;
+    transition: 0.3s;
+    background-color: rgb(64, 64, 64);
+    
+}
+.blok2Music{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 90%;
+}
+.imgMusic{
+    object-fit: cover;
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px rgb(12, 12, 12);
+}
+.descMusic{
+    margin-top: -26px;
+}
+
+
+
+
+.blokMusic:hover .btnPlay{
+    display: block;
+    position: relative;
+    bottom: 65px;
+    left: 120px;
+    width: 55px;
+}
+.blokMusic:hover audio{
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    height: 25px;
+    width: 180px;
+}
+
+.btnPlay{
+    display: none;
+}
+audio{
+    display: none;
+}
+
+
+.playslist{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.blok4{
+    border-top: 1px solid rgb(99, 99, 99);
+}
+
+
+.boxTxt{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxReseau{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+.imgReseau{
+    width: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(85, 85, 85);
+}
